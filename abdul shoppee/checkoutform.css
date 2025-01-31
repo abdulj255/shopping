@@ -1,0 +1,140 @@
+/* Global box-sizing for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem; /* 16px, or adjust based on preference */
+  padding: 8px;
+  margin: 0;
+}
+
+/* Layout - Row and Columns */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  flex: 25%;
+  padding: 0 16px;
+}
+
+.col-50 {
+  flex: 50%;
+  padding: 0 16px;
+}
+
+.col-75 {
+  flex: 75%;
+  padding: 0 16px;
+}
+
+/* Container for form sections */
+.container {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px; /* Added margin for spacing */
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+/* Input fields */
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="text"]:focus {
+  border-color: #4CAF50; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Light green shadow for focus */
+}
+
+/* Labels */
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Icon container for payment method icons */
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.icon-container:hover {
+  color: #45a049; /* Change icon color on hover */
+}
+
+/* Checkout button */
+.checkout {
+  background-color: #000000;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.checkout:hover {
+  background-color: #45a049;
+}
+
+.checkout:focus {
+  outline: 2px solid #45a049; /* Add focus outline on checkout button */
+}
+
+/* Links styling */
+a {
+  color: #2196F3;
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  color: #0b7dda; /* Darker shade on hover */
+}
+
+/* Horizontal line */
+hr {
+  border: 1px solid lightgrey;
+}
+
+/* Price styling */
+span.price {
+  float: right;
+  color: grey;
+  clear: both; /* Clear any floats */
+}
+
+/* Mobile responsive layout (less than 800px wide) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse; /* Reversing columns to stack */
+  }
+
+  .col-25 {
+    margin-bottom: 20px;
+  }
+
+  .col-50,
+  .col-75 {
+    flex: 100%;
+  }
+
+  /* Ensure checkout button remains at the bottom */
+  .checkout {
+    margin-top: 20px;
+  }
+}

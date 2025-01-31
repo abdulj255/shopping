@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- External CSS files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Custom CSS files (use relative paths for local files) -->
+    <link rel="stylesheet" href="abdulshoppee.css">
+    <link rel="stylesheet" href="checkoutform.css">
+
+    <!-- External JavaScript (placed at the bottom for better performance) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Local JavaScript file -->
+    <script src="mybag.js"></script>
+
+   
+  
+    
+ 
+    
+  
+
+  
+
+ <!-- Optional Bootstrap JS (just once) -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</head>
+
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand" href="file:///C:/Users/Lenovo/Desktop/abdul%20shoppee/shoppee.html">
+      <img src="C:\Users\Lenovo\Pictures\Shoppee.jpg" alt="SHOPPEE LOGO" style="width:42px;height:42px;">
+    </a>
+
+    <!-- Navbar Toggle Button for Mobile View -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="mensfashion.html">MEN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="C:\Users\Lenovo\Desktop\abdul shoppee\womensfashion.html">WOMEN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="C:\Users\Lenovo\Desktop\abdul shoppee\kidsfashion.html">KIDS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">HOME & LIVING</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BEAUTY</a>
+        </li>
+      </ul>
+
+      <!-- Search Form and Icons -->
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+
+        <!-- User Icon (Font Awesome) -->
+        <a class="navbar-brand" href="C:\Users\Lenovo\Desktop\abdul shoppee\loginform.html">
+          <i class="fas fa-user"></i>
+        </a>
+
+        <!-- Wishlist Icon (Font Awesome) -->
+        <a class="navbar-brand" href="C:\Users\Lenovo\Desktop\abdul shoppee\wishlist.html">
+          <i class="fas fa-heart"></i>
+        </a>
+
+        <!-- Shopping Bag Icon (Font Awesome) -->
+        <a class="navbar-brand" href="C:\Users\Lenovo\Desktop\abdul shoppee\mybag.html">
+          <i class="fas fa-shopping-bag"></i>
+        </a>
+      </form>
+    </div>
+  </div>
+</nav>
+
+  <body>
+    <div class="row">
+        <div class="col-75">
+            <div class="container shadow-sm">
+                <form action="/action_page.php" id="billingForm" onsubmit="return validateForm()">
+                    <div class="row">
+                        <div class="col-50">
+                            <h3>Billing Address</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="John M. Doe" required oninput="updateOrderSummary()">
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required oninput="updateOrderSummary()">
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" required oninput="updateOrderSummary()">
+                            <label for="city"><i class="fa fa-institution"></i> City</label>
+                            <input type="text" id="city" name="city" placeholder="New York" required oninput="updateOrderSummary()">
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="state" placeholder="NY" required oninput="updateOrderSummary()">
+                                </div>
+                                <div class="col-50">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" id="zip" name="zip" placeholder="10001" required oninput="updateOrderSummary()">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-50">
+                            <h3>Payment</h3>
+                            <label for="fname">Accepted Cards</label>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                            </div>
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="John More Doe" required oninput="updateOrderSummary()">
+                            <label for="ccnum">Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required oninput="updateOrderSummary()">
+                            <label for="expmonth">Exp Month</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September" required oninput="updateOrderSummary()">
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Exp Year</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="2018" required oninput="updateOrderSummary()">
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="352" required oninput="updateOrderSummary()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <label>
+                        <input type="checkbox" id="sameadr" name="sameadr" onchange="toggleShippingAddress()"> Shipping address same as billing
+                    </label>
+
+                    <div id="shipping-address" style="display:none;">
+                        <h3>Shipping Address</h3>
+                        <label for="shipping-adr">Address</label>
+                        <input type="text" id="shipping-adr" name="shipping-address" placeholder="542 W. 15th Street" oninput="updateOrderSummary()">
+                        <label for="shipping-city">City</label>
+                        <input type="text" id="shipping-city" name="shipping-city" placeholder="New York" oninput="updateOrderSummary()">
+                        <label for="shipping-state">State</label>
+                        <input type="text" id="shipping-state" name="shipping-state" placeholder="NY" oninput="updateOrderSummary()">
+                        <label for="shipping-zip">Zip</label>
+                        <input type="text" id="shipping-zip" name="shipping-zip" placeholder="10001" oninput="updateOrderSummary()">
+                    </div>
+
+                    <button class="btn btn-dark w-100" type="submit">Place Order</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Order Summary in Checkout -->
+        <div class="col-25">
+            <div class="card-body shadow-sm">
+                <h4 class="card-title mb-4">Order Summary</h4>
+                <div class="d-flex justify-content-between mb-3">
+                    <span>Order #</span>
+                    <span class="text-muted">ORD-2024-001</span>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <span>Subtotal</span>
+                    <span id="checkoutSubtotal">$0.00</span>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <span>Shipping</span>
+                    <span id="checkoutShipping">$0.00</span>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <span>Tax</span>
+                    <span id="checkoutTax">$0.00</span>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between mb-3 fw-bold">
+                    <span>Total</span>
+                    <span class="text-black" id="checkoutTotal">$0.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- Footer -->
+<div class="container p-5 my-5 border">
+    <footer>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="shoppee.html">
+            <img src="C:\Users\Lenovo\Pictures\Shoppee.jpg" alt="SHOPPEE LOGO" style="width:42px;height:42px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" href="mensfashion.html">MEN</a></li>
+              <li class="nav-item"><a class="nav-link" href="womensfashion.html">WOMEN</a></li>
+              <li class="nav-item"><a class="nav-link" href="kidsfashion.html">KIDS</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">HOME & LIVING</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">BEAUTY</a></li>
+            </ul>
+  
+            <!-- Subscribe Section -->
+            <div class="jumbotron text-center">
+              <form class="form-inline" id="subscribeForm">
+                <div class="input-group">
+                  <input type="email" class="form-control" size="50" id="subscribeEmail" placeholder="Email Address" required>
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-danger" onclick="subscribe()">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </footer>
+  
+    <!-- Footer Contact Section -->
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><i class="bi bi-geo-alt"></i> Chicago, US</p>
+        <p><i class="bi bi-telephone"></i> +00 1515151515</p>
+        <p><i class="bi bi-envelope"></i> myemail@shoppee.com</p>
+      </div>
+  
+      <div class="col-sm-7">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+  
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <button class="btn btn-primary rounded-pill px-4 py-2 shadow-sm float-end" type="button" onclick="sendMessage()" aria-label="Send message">
+              <i class="bi bi-send"></i> Send
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- JavaScript to handle form submission -->
+  <script>
+    // Subscribe Function
+    function subscribe() {
+      const email = document.getElementById('subscribeEmail').value;
+  
+      if (email) {
+        // Simulate an API call to subscribe the email (you can send it to your backend)
+        console.log("Subscribed with email:", email);
+        alert("Thank you for subscribing!");
+        document.getElementById('subscribeEmail').value = ''; // Clear input
+      } else {
+        alert("Please enter a valid email.");
+      }
+    }
+  
+    // Send Message Function (Contact Form)
+    function sendMessage() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const comments = document.getElementById('comments').value;
+  
+      if (name && email && comments) {
+        // Simulate sending the message (you can send it to your backend)
+        console.log("Message sent from:", name);
+        console.log("Email:", email);
+        console.log("Comments:", comments);
+        alert("Thank you for your message! We'll get back to you soon.");
+        document.getElementById('name').value = ''; // Clear input
+        document.getElementById('email').value = ''; // Clear input
+        document.getElementById('comments').value = ''; // Clear textarea
+      } else {
+        alert("Please fill out all fields.");
+      }
+    }
+  </script>
+  
+
+
+    <script>
+        // Function to update the order summary dynamically
+        function updateOrderSummary() {
+            // Example logic for order details
+            const subtotal = 259.98; // Example static value (replace with dynamic input-based calculation)
+            const shipping = 9.99; // Could be dynamic based on location
+            const tax = subtotal * 0.1; // Tax is 10% of subtotal
+
+            // Update the summary dynamically
+            const total = subtotal + shipping + tax;
+
+            // Update localStorage for persistence
+            localStorage.setItem('myBagSubtotal', subtotal.toFixed(2));
+            localStorage.setItem('myBagShipping', shipping.toFixed(2));
+            localStorage.setItem('myBagTax', tax.toFixed(2));
+            localStorage.setItem('myBagTotal', total.toFixed(2));
+
+            // Update the UI with the current values
+            document.getElementById('checkoutSubtotal').textContent = `$${subtotal.toFixed(2)}`;
+            document.getElementById('checkoutShipping').textContent = `$${shipping.toFixed(2)}`;
+            document.getElementById('checkoutTax').textContent = `$${tax.toFixed(2)}`;
+            document.getElementById('checkoutTotal').textContent = `$${total.toFixed(2)}`;
+        }
+
+        // Function to toggle the shipping address visibility and copy the billing address
+        function toggleShippingAddress() {
+            const sameAdrCheckbox = document.getElementById('sameadr');
+            const shippingAddressDiv = document.getElementById('shipping-address');
+            if (sameAdrCheckbox.checked) {
+                // Copy billing address to shipping address fields
+                document.getElementById('shipping-adr').value = document.getElementById('adr').value;
+                document.getElementById('shipping-city').value = document.getElementById('city').value;
+                document.getElementById('shipping-state').value = document.getElementById('state').value;
+                document.getElementById('shipping-zip').value = document.getElementById('zip').value;
+                shippingAddressDiv.style.display = "none"; // Hide shipping address fields
+            } else {
+                shippingAddressDiv.style.display = "block"; // Show shipping address fields when unchecked
+                document.getElementById('shipping-adr').value = '';
+                document.getElementById('shipping-city').value = '';
+                document.getElementById('shipping-state').value = '';
+                document.getElementById('shipping-zip').value = '';
+            }
+        }
+
+        // Initialize order summary on page load
+        window.onload = function() {
+            updateOrderSummary(); // Update both the checkout and "My Bag" order summaries on page load
+        }
+    </script>
+</body>

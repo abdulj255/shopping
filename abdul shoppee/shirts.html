@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="C:\Users\Lenovo\Desktop\abdul shoppee\shirts.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="abdulshoppee.css">
+    <script src="C:\Users\Lenovo\Desktop\abdul shoppee\shirts.js"></script>
+
+ <!-- Bootstrap CSS (via CDN) -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+ <!-- Custom CSS file (make sure the file path is correct) -->
+ <link rel="stylesheet" href="C:\Users\Lenovo\Desktop\abdul shoppee\abdulshoppee.css">
+ 
+ <!-- Bootstrap Icons (for icons like the hamburger menu, etc.) -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+ <!-- Font Awesome (for more icons, like user, heart, shopping bag, etc.) -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+ <!-- Optional Bootstrap JS (just once) -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+ 
+</head>
+
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid">
+ <!-- Logo -->
+ <a class="navbar-brand" href="file:///C:/Users/Lenovo/Desktop/abdul%20shoppee/shoppee.html">
+   <img src="C:\Users\Lenovo\Pictures\Shoppee.jpg" alt="SHOPPEE LOGO" style="width:42px;height:42px;">
+ </a>
+
+ <!-- Navbar Toggle Button for Mobile View -->
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+ </button>
+
+ <!-- Navbar Links -->
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+     <li class="nav-item">
+       <a class="nav-link active" aria-current="page" href="mensfashion.html">MEN</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="C:\Users\Lenovo\Desktop\abdul shoppee\womensfashion.html">WOMEN</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="C:\Users\Lenovo\Desktop\abdul shoppee\kidsfashion.html">KIDS</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="#">HOME & LIVING</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="#">BEAUTY</a>
+     </li>
+   </ul>
+
+   <!-- Search Form and Icons -->
+   <form class="d-flex">
+     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+     <button class="btn btn-outline-success" type="submit">Search</button>
+
+     <!-- User Icon (Font Awesome) -->
+     <a class="navbar-brand" href="C:\Users\Lenovo\Desktop\abdul shoppee\loginform.html">
+       <i class="fas fa-user"></i>
+     </a>
+
+     <!-- Wishlist Icon (Font Awesome) -->
+     <a class="navbar-brand" href="C:\Users\Lenovo\Desktop\abdul shoppee\wishlist.html">
+       <i class="fas fa-heart"></i>
+     </a>
+
+     <!-- Shopping Bag Icon (Font Awesome) -->
+     <a class="navbar-brand" href="C:\Users\Lenovo\Desktop\abdul shoppee\mybag.html">
+       <i class="fas fa-shopping-bag"></i>
+     </a>
+   </form>
+ </div>
+</div>
+</nav>
+<title>Shirts Collection</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+
+<style>
+    /* Basic styling */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+    }
+
+    h1 {
+        text-align: center;
+        color: rgb(0, 4, 5);
+        margin-top: 20px;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .card {
+        width: 18rem;
+        border: none;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .card-body {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .card-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .food-price {
+        display: block;
+    }
+
+    /* Wishlist icon styling */
+    .add-wishlist {
+        font-size: 30px;
+        cursor: pointer;
+        color: red;
+        transition: color 0.3s ease;
+    }
+
+    .add-wishlist:hover {
+        color: #ff4d4d;
+    }
+</style>
+</head>
+<body>
+<h1>SHIRTS</h1><br>
+
+<!-- Shop by category list -->
+<div class="center">
+    <!-- Product 1 -->
+    <a href="C:\Users\Lenovo\Desktop\abdul shoppee\product.html">
+        <div class="card">
+            <img src="C:\Users\Lenovo\Pictures\knitwear.jfif" class="card-img-top" alt="Knit Jumper">
+            <div class="card-body">
+                <span class="food-price">
+                    <h5 class="card-title">Knit Jumper</h5>
+                    <p class="card-text">26,500</p>
+                </span>
+                <ion-icon name="heart" class="add-wishlist" onclick="addToWishlist('Knit Jumper')"></ion-icon>
+            </div>
+        </div>
+    </a>
+
+    <!-- Product 2 -->
+    <div class="card">
+        <img src="C:\Users\Lenovo\Pictures\shirts.jpg" class="card-img-top" alt="Suits">
+        <div class="card-body">
+            <h5 class="card-title">Suits</h5>
+            <p class="card-text">36,000</p>
+            <ion-icon name="heart" class="add-wishlist" onclick="addToWishlist('Suits')"></ion-icon>
+        </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="card">
+        <img src="C:\Users\Lenovo\Pictures\streetwear.webp" class="card-img-top" alt="Casual Fashion">
+        <div class="card-body">
+            <h5 class="card-title">Casual Shirts</h5>
+            <p class="card-text">21,699</p>
+            <ion-icon name="heart" class="add-wishlist" onclick="addToWishlist('Casual Shirts')"></ion-icon>
+        </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="card">
+        <img src="C:\Users\Lenovo\Downloads\active.jpg" class="card-img-top" alt="Men's Active Wear">
+        <div class="card-body">
+            <h5 class="card-title">Regular Fit T-Shirt</h5>
+            <p class="card-text">8,000</p>
+            <ion-icon name="heart" class="add-wishlist" onclick="addToWishlist('Regular Fit T-Shirt')"></ion-icon>
+        </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="card">
+        <img src="C:\Users\Lenovo\Pictures\KIMONO.webp" class="card-img-top" alt="Kimono">
+        <div class="card-body">
+            <h5 class="card-title">Kimono</h5>
+            <p class="card-text">60,000</p>
+            <ion-icon name="heart" class="add-wishlist" onclick="addToWishlist('Kimono')"></ion-icon>
+        </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="card">
+        <img src="C:\Users\Lenovo\Pictures\TangSuit.webp" class="card-img-top" alt="Western Wear">
+        <div class="card-body">
+            <h5 class="card-title">Tang Suit</h5>
+            <p class="card-text">27,999</p>
+            <ion-icon name="heart" class="add-wishlist" onclick="addToWishlist('Tang Suit')"></ion-icon>
+        </div>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="card">
+        <img src="C:\Users\Lenovo\Pictures\streetfashion1.jpg" class="card-img-top" alt="Street Fashion">
+        <div class="card-body">
+            <h5 class="card-title">Trucker Jacket</h5>
+            <p class="card-text">31,000</p>
+            <ion-icon name="heart" class="add-wishlist" onclick="addToWishlist('Trucker Jacket')"></ion-icon>
+        </div>
+    </div>
+
+    <!-- Product 8 -->
+    <div class="card">
+        <img src="C:\Users\Lenovo\Pictures\tshirt.webp" class="card-img-top" alt="Slim T-Shirt">
+        <div class="card-body">
+            <h5 class="card-title">Slim T-Shirt</h5>
+            <p class="card-text">11,899</p>
+            <ion-icon name="heart" class="add-wishlist" onclick="addToWishlist('Slim T-Shirt')"></ion-icon>
+        </div>
+    </div>
+</div>
+
+<script>
+    function addToWishlist(item) {
+        alert(item + " has been added to your wishlist!");
+    }
+</script>
+<!--Pagination-->
+
+<div class="pagination" >
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a class="active" href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+</div>
+<br>
+
+
+
+
+
+<!-- Footer and Subscribe Section (Within a Single Box) -->
+<div class="container p-5 my-5 border">
+  <footer>
+    <!-- Footer Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="file:///C:/Users/Lenovo/Desktop/abdul%20shoppee/shoppee.html">
+          <img src="C:\Users\Lenovo\Pictures\Shoppee.jpg" alt="SHOPPEE LOGO" style="width:42px;height:42px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="file:///C:/Users/Lenovo/Desktop/abdul%20shoppee/mensfashion.html">MEN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/Users/Lenovo/Desktop/abdul%20shoppee/womensfashion.html">WOMEN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="file:///C:/Users/Lenovo/Desktop/abdul%20shoppee/kidsfashion.html">KIDS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">HOME & LIVING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BEAUTY</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </footer>
+
+  <!-- Subscribe Form Section (Inline with Footer Navigation) -->
+  <div class="text-center mt-4">
+    <form class="form-inline" onsubmit="showPopupMessage(event)">
+      <div class="input-group">
+        <input type="email" class="form-control" size="30" placeholder="Email Address" id="email" required>
+        <div class="input-group-btn">
+          <button type="submit" class="btn btn-dark">Subscribe</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- Optional: Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    // Function to show a popup message when the subscribe button is clicked
+    function showPopupMessage(event) {
+      event.preventDefault(); // Prevent the form from submitting
+      const email = document.getElementById("email").value;
+      if (email) {
+        alert("Thank you for subscribing with: " + email);
+      } else {
+        alert("Please enter a valid email address.");
+      }
+    }
+  </script>
+</div>
+
+<!-- Contact Section (Keeps the contact form separate) -->
+<div class="container my-5">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><i class="bi bi-geo-alt"></i> Chicago, US</p>
+      <p><i class="bi bi-telephone"></i> +00 1515151515</p>
+      <p><i class="bi bi-envelope"></i> myemail@shoppee.com</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn btn-primary rounded-pill px-4 py-2 shadow-sm hover-shadow-lg float-end" type="submit" aria-label="Send message">
+            <i class="bi bi-send"></i> Send
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

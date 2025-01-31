@@ -1,0 +1,419 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="C:\Users\Lenovo\Desktop\abdul shoppee\mybag.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="C:\Users\Lenovo\Desktop\abdul shoppee\abdulshoppee.css"> 
+    
+    <!---->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+    
+  <!-- Bootstrap CSS (via CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+  <!-- Custom CSS file (make sure the file path is correct) -->
+  <link rel="stylesheet" href="C:\Users\Lenovo\Desktop\abdul shoppee\abdulshoppee.css">
+  
+  <!-- Bootstrap Icons (for icons like the hamburger menu, etc.) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Font Awesome (for more icons, like user, heart, shopping bag, etc.) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Optional Bootstrap JS (just once) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+</head>
+
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid">
+  <!-- Logo -->
+  <a class="navbar-brand" href="file:///C:/Users/Lenovo/Desktop/abdul%20shoppee/shoppee.html">
+    <img src="C:\Users\Lenovo\Pictures\Shoppee.jpg" alt="SHOPPEE LOGO" style="width:42px;height:42px;">
+  </a>
+
+  <!-- Navbar Toggle Button for Mobile View -->
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar Links -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="mensfashion.html">MEN</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="C:\Users\Lenovo\Desktop\abdul shoppee\womensfashion.html">WOMEN</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="C:\Users\Lenovo\Desktop\abdul shoppee\kidsfashion.html">KIDS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">HOME & LIVING</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">BEAUTY</a>
+      </li>
+    </ul>
+
+    <!-- Search Form and Icons -->
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+
+      <!-- User Icon (Font Awesome) -->
+      <a class="navbar-brand" href="C:\Users\Lenovo\Desktop\abdul shoppee\loginform.html">
+        <i class="fas fa-user"></i>
+      </a>
+
+      <!-- Wishlist Icon (Font Awesome) -->
+      <a class="navbar-brand" href="C:\Users\Lenovo\Desktop\abdul shoppee\wishlist.html">
+        <i class="fas fa-heart"></i>
+      </a>
+
+      <!-- Shopping Bag Icon (Font Awesome) -->
+      <a class="navbar-brand" href="C:\Users\Lenovo\Desktop\abdul shoppee\mybag.html">
+        <i class="fas fa-shopping-bag"></i>
+      </a>
+    </form>
+  </div>
+</div>
+</nav>
+
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="row g-4">
+            <!-- Order Summary -->
+            <div class="col-lg-4 order-lg-1">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title mb-4">Order Summary</h4>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>Order #</span>
+                            <span class="text-muted">ORD-2024-001</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>Subtotal</span>
+                            <span id="subtotal">$295.97</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>Shipping</span>
+                            <span id="shipping">$9.99</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>Tax</span>
+                            <span id="tax">$25.99</span>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between mb-3 fw-bold">
+                            <span>Total</span>
+                            <span class="text-black" id="total">$295.97</span>
+                        </div>
+                        <button class="btn btn-dark w-100">
+                            <a href="checkoutform.html" style="color: white;">To Checkout</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product List -->
+            <div class="col-lg-8 order-lg-0">
+                <!-- Product 1: Textured-Knit Jumper -->
+                <div class="card shadow-sm mb-4" id="product-1">
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <img src="C:\Users\Lenovo\Pictures\knitwear.jfif" class="img-fluid rounded" alt="Textured Knit Jumper">
+                            </div>
+                            <div class="col-md-8">
+                                <h5>Textured-Knit Jumper</h5>
+                                <div class="mb-2">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <span class="ms-2">(4.0)</span>
+                                </div>
+                                <p class="text-muted mb-2">Size: 
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="selectSize('M', this, 100)">M</button>
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="selectSize('L', this, 120)">L</button>
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="selectSize('XL', this, 140)">XL</button>
+                                </p>
+                                <p class="text-muted mb-2">Color: 
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="selectColor('Red', this, 100)">Red</button>
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="selectColor('Blue', this, 110)">Blue</button>
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="selectColor('Green', this, 120)">Green</button>
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="selectColor('Yellow', this, 160)">Yellow</button>
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="selectColor('White', this, 150)">White</button>
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="selectColor('Black', this, 170)">Black</button>
+                                </p>
+                                  
+                                <p class="fw-bold mb-2" id="price-1" data-price="100.00">$100.00</p>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="decrementQuantity(this)" aria-label="Decrement quantity">-</button>
+                                    <input type="number" class="form-control form-control-sm mx-2 quantity-input" style="width: 60px" value="1" min="1" readonly>
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="incrementQuantity(this)" aria-label="Increment quantity">+</button>
+                                    <button class="btn btn-danger btn-sm ms-2" onclick="removeItem('product-1')">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Short Sleeved Summer Shirt -->
+                <div class="card shadow-sm" id="product-2">
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <img src="C:\Users\Lenovo\Pictures\casual1.jpg" class="img-fluid rounded" alt="Short Sleeved Summer Shirt">
+                            </div>
+                            <div class="col-md-8">
+                                <h5>Short Sleeved Summer Shirt</h5>
+                                <div class="mb-2">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                    <span class="ms-2">(4.5)</span>
+                                </div>
+                                <p class="text-muted mb-2">Size: 
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="selectSize('M', this, 150)">M</button>
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="selectSize('L', this, 160)">L</button>
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="selectSize('XL', this, 170)">XL</button>
+                                </p>
+                                <p class="text-muted mb-2">Color: 
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="selectColor('Red', this, 100)">Red</button>
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="selectColor('Blue', this, 110)">Blue</button>
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="selectColor('Green', this, 120)">Green</button>
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="selectColor('Yellow', this, 160)">Yellow</button>
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="selectColor('White', this, 150)">White</button>
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="selectColor('Black', this, 170)">Black</button>
+                                </p>
+                                  
+                                <p class="fw-bold mb-2" id="price-2" data-price="159.98">$159.98</p>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="decrementQuantity(this)" aria-label="Decrement quantity">-</button>
+                                    <input type="number" class="form-control form-control-sm mx-2 quantity-input" style="width: 60px" value="1" min="1" readonly>
+                                    <button class="btn btn-outline-secondary btn-sm" onclick="incrementQuantity(this)" aria-label="Increment quantity">+</button>
+                                    <button class="btn btn-danger btn-sm ms-2" onclick="removeItem('product-2')">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+<!-- Footer -->
+<div class="container p-5 my-5 border">
+    <footer>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="shoppee.html">
+            <img src="C:\Users\Lenovo\Pictures\Shoppee.jpg" alt="SHOPPEE LOGO" style="width:42px;height:42px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" href="mensfashion.html">MEN</a></li>
+              <li class="nav-item"><a class="nav-link" href="womensfashion.html">WOMEN</a></li>
+              <li class="nav-item"><a class="nav-link" href="kidsfashion.html">KIDS</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">HOME & LIVING</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">BEAUTY</a></li>
+            </ul>
+  
+            <!-- Subscribe Section -->
+            <div class="jumbotron text-center">
+              <form class="form-inline" id="subscribeForm">
+                <div class="input-group">
+                  <input type="email" class="form-control" size="50" id="subscribeEmail" placeholder="Email Address" required>
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-danger" onclick="subscribe()">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </footer>
+  
+    <!-- Footer Contact Section -->
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><i class="bi bi-geo-alt"></i> Chicago, US</p>
+        <p><i class="bi bi-telephone"></i> +00 1515151515</p>
+        <p><i class="bi bi-envelope"></i> myemail@shoppee.com</p>
+      </div>
+  
+      <div class="col-sm-7">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+  
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <button class="btn btn-primary rounded-pill px-4 py-2 shadow-sm float-end" type="button" onclick="sendMessage()" aria-label="Send message">
+              <i class="bi bi-send"></i> Send
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- JavaScript to handle form submission -->
+  <script>
+    // Subscribe Function
+    function subscribe() {
+      const email = document.getElementById('subscribeEmail').value;
+  
+      if (email) {
+        // Simulate an API call to subscribe the email (you can send it to your backend)
+        console.log("Subscribed with email:", email);
+        alert("Thank you for subscribing!");
+        document.getElementById('subscribeEmail').value = ''; // Clear input
+      } else {
+        alert("Please enter a valid email.");
+      }
+    }
+  
+    // Send Message Function (Contact Form)
+    function sendMessage() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const comments = document.getElementById('comments').value;
+  
+      if (name && email && comments) {
+        // Simulate sending the message (you can send it to your backend)
+        console.log("Message sent from:", name);
+        console.log("Email:", email);
+        console.log("Comments:", comments);
+        alert("Thank you for your message! We'll get back to you soon.");
+        document.getElementById('name').value = ''; // Clear input
+        document.getElementById('email').value = ''; // Clear input
+        document.getElementById('comments').value = ''; // Clear textarea
+      } else {
+        alert("Please fill out all fields.");
+      }
+    }
+  </script>
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Update the order summary (Subtotal, Tax, Total)
+        function updateTotals() {
+            let subtotal = 0;
+            const quantityInputs = document.querySelectorAll('.quantity-input');
+            quantityInputs.forEach(input => {
+                const price = parseFloat(input.closest('.col-md-8').querySelector('[id^="price-"]').getAttribute('data-price'));
+                const quantity = parseInt(input.value);
+                subtotal += price * quantity;
+            });
+
+            const shipping = 9.99; // Flat shipping cost
+            const tax = subtotal * 0.1; // 10% tax rate
+            const total = subtotal + shipping + tax;
+
+            // Update the summary on the page
+            document.getElementById('subtotal').textContent = `$${subtotal.toFixed(2)}`;
+            document.getElementById('shipping').textContent = `$${shipping.toFixed(2)}`;
+            document.getElementById('tax').textContent = `$${tax.toFixed(2)}`;
+            document.getElementById('total').textContent = `$${total.toFixed(2)}`;
+        }
+
+        // Increment quantity
+        function incrementQuantity(btn) {
+            const input = btn.previousElementSibling;
+            input.value = parseInt(input.value) + 1;
+            updateTotals();
+        }
+
+        // Decrement quantity
+        function decrementQuantity(btn) {
+            const input = btn.nextElementSibling;
+            if (parseInt(input.value) > 1) {
+                input.value = parseInt(input.value) - 1;
+                updateTotals();
+            }
+        }
+
+        // Remove product
+        function removeItem(productId) {
+            const productElement = document.getElementById(productId);
+            if (productElement) {
+                productElement.remove(); // Remove the product from the cart
+                updateTotals(); // Recalculate the totals after removal
+            }
+        }
+
+        // Select size
+        function selectSize(size, btn, price) {
+            // Highlight selected size
+            const buttons = btn.closest('.col-md-8').querySelectorAll('.btn-outline-secondary');
+            buttons.forEach(button => button.classList.remove('btn-primary'));
+            btn.classList.add('btn-primary');
+
+            // Update price for this size
+            const priceElement = btn.closest('.col-md-8').querySelector('[id^="price-"]');
+            priceElement.textContent = `$${price.toFixed(2)}`;
+            priceElement.setAttribute('data-price', price);
+
+            // Update totals
+            updateTotals();
+        }
+
+        // Select color
+        function selectColor(color, btn, price) {
+            // Highlight the selected color button
+            const buttons = btn.closest('.col-md-8').querySelectorAll('.btn-outline-secondary');
+            buttons.forEach(button => {
+                button.classList.remove('btn-primary'); // Reset other buttons to default state
+                button.classList.remove('selected-color'); // Reset selected state
+                button.style.backgroundColor = ''; // Remove any background color
+            });
+
+            // Add the selected styles to the clicked button
+            btn.classList.add('btn-primary'); // Highlight the selected button
+            btn.classList.add('selected-color');
+            btn.style.backgroundColor = color.toLowerCase(); // Update the background color dynamically
+
+            // Update price for this color
+            const priceElement = btn.closest('.col-md-8').querySelector('[id^="price-"]');
+            priceElement.textContent = `$${price.toFixed(2)}`;
+            priceElement.setAttribute('data-price', price);
+
+            // Update totals
+            updateTotals();
+        }
+
+    </script>
+</body>

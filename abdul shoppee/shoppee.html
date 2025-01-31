@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Shoppee</title>
+    
+    <!-- Bootstrap CSS (via CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Custom CSS file (make sure the file path is correct) -->
+    <link rel="stylesheet" href="C:\Users\Lenovo\Desktop\abdul shoppee\abdulshoppee.css">
+    
+    <!-- Bootstrap Icons (for icons like the hamburger menu, etc.) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Font Awesome (for more icons, like user, heart, shopping bag, etc.) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Optional Bootstrap JS (just once) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</head>
+
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand" href="file:///C:/Users/Lenovo/Desktop/abdul%20shoppee/shoppee.html">
+      <img src="C:\Users\Lenovo\Pictures\Shoppee.jpg" alt="SHOPPEE LOGO" style="width:42px;height:42px;">
+    </a>
+
+    <!-- Navbar Toggle Button for Mobile View -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="mensfashion.html">MEN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="C:\Users\Lenovo\Desktop\abdul shoppee\womensfashion.html">WOMEN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="C:\Users\Lenovo\Desktop\abdul shoppee\kidsfashion.html">KIDS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">HOME & LIVING</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BEAUTY</a>
+        </li>
+      </ul>
+
+      <!-- Search Form and Icons -->
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+
+        <!-- User Icon (Font Awesome) -->
+        <a class="navbar-brand" href="C:\Users\Lenovo\Desktop\abdul shoppee\loginform.html">
+          <i class="fas fa-user"></i>
+        </a>
+
+        <!-- Wishlist Icon (Font Awesome) -->
+        <a class="navbar-brand" href="C:\Users\Lenovo\Desktop\abdul shoppee\wishlist.html">
+          <i class="fas fa-heart"></i>
+        </a>
+
+        <!-- Shopping Bag Icon (Font Awesome) -->
+        <a class="navbar-brand" href="C:\Users\Lenovo\Desktop\abdul shoppee\mybag.html">
+          <i class="fas fa-shopping-bag"></i>
+        </a>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<!--slider-->
+<div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <a href="file:///C:/Users/Lenovo/Desktop/abdul%20shoppee/mensfashion.html">
+        <img src="C:\Users\Lenovo\Pictures\men.WEBP" class="d-block w-100 carousel-image" alt="Men's Fashion">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color: white;">Men's Fashion</h5>
+        </a>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="2000">
+      <a href="C:\Users\Lenovo\Desktop\abdul shoppee\womensfashion.html">
+        <img src="C:\Users\Lenovo\Pictures\women.jpeg" class="d-block w-100 carousel-image" alt="Women's Fashion">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color: white;">Women's Fashion</h5>
+        </a>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <a href="C:\Users\Lenovo\Desktop\abdul shoppee\kidsfashion.html">
+        <img src="C:\Users\Lenovo\Pictures\kids.jpg" class="d-block w-100 carousel-image" alt="Kids Fashion">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 style="color: white;">Kids Fashion</h5>
+        </a>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="C:\Users\Lenovo\Pictures\home and living.webp" class="d-block w-100 carousel-image" alt="Home and Living">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Home and Living</h5>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="C:\Users\Lenovo\Pictures\beauty.jpg" class="d-block w-100 carousel-image" alt="Beauty">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Beauty</h5>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div><br>
+
+<!-- CSS to make carousel images have the same width and increased height -->
+<style>
+  .carousel-image {
+    width: 100%;
+    height: 600px; /* Increased height of the carousel images */
+    object-fit: cover; /* Ensures the image covers the entire space without distortion */
+  }
+</style>
+
+
+<!-- Shop by Category -->
+<h1 style="text-align: center; color:rgb(0, 4, 5);">
+  SHOP BY CATEGORY
+</h1><br>
+
+<!-- Shop by category list -->
+<div class="center" style="text-align: center;">
+  <div class="mx-sm-5">
+    <div class="row">
+      <!-- Ethical Fashion Card -->
+      <div class="card shadow slide-in-bottom" style="width: 18rem;">
+        <a href="C:\Users\Lenovo\Desktop\abdul%20shoppee\womensfashion.html">
+          <img src="C:\Users\Lenovo\Pictures\ethical.jpg" class="card-img-top" alt="Ethical Fashion" style="object-fit: cover; height: 300px;">
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">Ethical Fashion</h5>
+            <p class="card-text">50%-80% OFF</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Casual Fashion Card -->
+      <div class="card shadow slide-in-bottom" style="width: 18rem;">
+        <a href="file:///C:/Users/Lenovo/Desktop/abdul%20shoppee/mensfashion.html">
+          <img src="C:\Users\Lenovo\Pictures\casual.jpg" class="card-img-top" alt="Casual Fashion" style="object-fit: cover; height: 300px;">
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">Casual Fashion</h5>
+            <p class="card-text">40%-80% OFF</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Men's Active Wear Card -->
+      <div class="card shadow slide-in-bottom" style="width: 18rem;">
+        <a href="file:///C:/Users/Lenovo/Desktop/abdul%20shoppee/mensfashion.html">
+          <img src="C:\Users\Lenovo\Downloads\active.jpg" class="card-img-top" alt="Men's Active Wear" style="object-fit: cover; height: 300px;">
+          <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">Men's Active Wear</h5>
+            <p class="card-text">30%-70% OFF</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Women's Active Wear Card -->
+      <div class="card shadow slide-in-bottom" style="width: 18rem;">
+        <img src="C:\Users\Lenovo\Pictures\active wear.jpg" class="card-img-top" alt="Women's Active Wear" style="object-fit: cover; height: 300px;">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title">Women's Active Wear</h5>
+          <p class="card-text">30%-70% OFF</p>
+        </div>
+      </div>
+
+      <!-- Western Wear Card -->
+      <div class="card shadow slide-in-bottom" style="width: 18rem;">
+        <img src="C:\Users\Lenovo\Pictures\western.jpg" class="card-img-top" alt="Western Wear" style="object-fit: cover; height: 300px;">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title">Western Wear</h5>
+          <p class="card-text">40%-70% OFF</p>
+        </div>
+      </div>
+
+      <!-- Watches Card -->
+      <div class="card shadow slide-in-bottom" style="width: 18rem;">
+        <img src="C:\Users\Lenovo\Pictures\watch.jpeg" class="card-img-top" alt="Watches" style="object-fit: cover; height: 300px;">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title">Watches</h5>
+          <p class="card-text">30%-60% OFF</p>
+        </div>
+      </div>
+
+      <!-- Lounge Wear Card -->
+      <div class="card shadow slide-in-bottom" style="width: 18rem;">
+        <img src="C:\Users\Lenovo\Pictures\laungewear.png" class="card-img-top" alt="Lounge Wear" style="object-fit: cover; height: 300px;">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title">Lounge Wear</h5>
+          <p class="card-text">30%-60% OFF</p>
+        </div>
+      </div>
+
+      <!-- Kids Wear Card -->
+      <div class="card shadow slide-in-bottom" style="width: 18rem;">
+        <img src="C:\Users\Lenovo\Downloads\kidswear.jpeg" class="card-img-top" alt="Kids Wear" style="object-fit: cover; height: 300px;">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title">Kids Wear</h5>
+          <p class="card-text">50%-70% OFF</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+
+<!-- Pagination -->
+<div class="pagination-container" style="text-align: center;">
+  <div class="pagination">
+    <a href="#" class="page-link">&laquo;</a>
+    <a href="#" class="page-link">1</a>
+    <a href="#" class="page-link active">2</a>
+    <a href="#" class="page-link">3</a>
+    <a href="#" class="page-link">4</a>
+    <a href="#" class="page-link">5</a>
+    <a href="#" class="page-link">6</a>
+    <a href="#" class="page-link">&raquo;</a>
+  </div>
+</div>
+<br>
+
+
+
+<!-- Footer -->
+<div class="container p-5 my-5 border">
+  <footer>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="shoppee.html">
+          <img src="C:\Users\Lenovo\Pictures\Shoppee.jpg" alt="SHOPPEE LOGO" style="width:42px;height:42px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="mensfashion.html">MEN</a></li>
+            <li class="nav-item"><a class="nav-link" href="womensfashion.html">WOMEN</a></li>
+            <li class="nav-item"><a class="nav-link" href="kidsfashion.html">KIDS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">HOME & LIVING</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">BEAUTY</a></li>
+          </ul>
+
+          <!-- Subscribe Section -->
+          <div class="jumbotron text-center">
+            <form class="form-inline" id="subscribeForm">
+              <div class="input-group">
+                <input type="email" class="form-control" size="50" id="subscribeEmail" placeholder="Email Address" required>
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-danger" onclick="subscribe()">Subscribe</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </footer>
+
+  <!-- Footer Contact Section -->
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><i class="bi bi-geo-alt"></i> Chicago, US</p>
+      <p><i class="bi bi-telephone"></i> +00 1515151515</p>
+      <p><i class="bi bi-envelope"></i> myemail@shoppee.com</p>
+    </div>
+
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn btn-primary rounded-pill px-4 py-2 shadow-sm float-end" type="button" onclick="sendMessage()" aria-label="Send message">
+            <i class="bi bi-send"></i> Send
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript to handle form submission -->
+<script>
+  // Subscribe Function
+  function subscribe() {
+    const email = document.getElementById('subscribeEmail').value;
+
+    if (email) {
+      // Simulate an API call to subscribe the email (you can send it to your backend)
+      console.log("Subscribed with email:", email);
+      alert("Thank you for subscribing!");
+      document.getElementById('subscribeEmail').value = ''; // Clear input
+    } else {
+      alert("Please enter a valid email.");
+    }
+  }
+
+  // Send Message Function (Contact Form)
+  function sendMessage() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const comments = document.getElementById('comments').value;
+
+    if (name && email && comments) {
+      // Simulate sending the message (you can send it to your backend)
+      console.log("Message sent from:", name);
+      console.log("Email:", email);
+      console.log("Comments:", comments);
+      alert("Thank you for your message! We'll get back to you soon.");
+      document.getElementById('name').value = ''; // Clear input
+      document.getElementById('email').value = ''; // Clear input
+      document.getElementById('comments').value = ''; // Clear textarea
+    } else {
+      alert("Please fill out all fields.");
+    }
+  }
+</script>

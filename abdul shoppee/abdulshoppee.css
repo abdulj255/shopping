@@ -1,0 +1,317 @@
+.pagination {
+  display: inline-block;
+  
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #00040f;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+
+.navbar{
+  margin-bottom: 0;
+
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: #050000 !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a  {
+  color: #f7f3f2 !important;
+  background-color: #000000 !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/* Slide-In Bottom animation for cards */
+.slide-in-bottom {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideInBottom 0.8s forwards;
+}
+
+/* Slide-In Bottom Keyframes */
+@keyframes slideInBottom {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effect for cards with shadow */
+.card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Smooth transition for carousel images */
+.carousel-item {
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner .carousel-item {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 1s, transform 1s;
+}
+
+.carousel-inner .carousel-item.active {
+  opacity: 1;
+  transform: scale(1);
+}
+/* Bounce Animation for Images */
+@keyframes bounce {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-bounce {
+  animation: bounce 0.6s ease-out;
+}
+
+/* Style for 'Shop by Category' and 'Similar Style' images (1:1 aspect ratio) */
+.shop-category-image, .similar-style-image {
+  width: 100%;  /* The image takes the full container width */
+  height: 0;
+  padding-bottom: 100%; /* 1:1 aspect ratio */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  display: block;
+  border-radius: 10px; /* Optional: Add rounded corners to match the style */
+}
+
+/* Additional optional styling for image container to ensure consistent size */
+.image-container {
+  position: relative;
+  width: 100%; /* Ensure the container takes full width */
+  height: auto;
+  max-width: 300px;  /* Max size for each image container (adjustable) */
+  margin: 10px; /* Optional margin between items */
+  overflow: hidden; /* Ensure content fits well inside the container */
+}
+
+
+/* Style for pagination container */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Styling the pagination links */
+.pagination {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling each page link */
+.pagination .page-link {
+  display: block;
+  padding: 8px 16px;
+  margin: 0 4px;
+  font-size: 16px;
+  color: black; /* Set the font color to black */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Active page link */
+.pagination .page-link.active {
+  color: white;
+  background-color: #000203;
+  border-color: #000203;
+}
+
+/* Hover effect for pagination links */
+.pagination .page-link:hover {
+  color: white;
+  background-color: #000203;
+  border-color: #000000;
+}
+
+/* Disable link style (for example, if there are no more pages) */
+.pagination .page-link:disabled {
+  color: #ccc;
+  background-color: #f1f1f1;
+  border-color: #ddd;
+}
+
+/*nav*/
+project-folder/
+  ├── images/
+      ├── person.png
+      ├── wishlist.png
+      ├── shopping.png
+  ├── loginform.html
+  ├── mybag.html
+  ├── index.html (or your main file)
+  ├── css/
+      ├── styles.css
+  └── js/
+      └── script.js
+
+    /* Minimalist styling for icons */
+    .navbar-brand i {
+      font-size: 24px; /* Icon size */
+      color: #333; /* Default color */
+      margin-right: 15px; /* Spacing between icons */
+      transition: all 0.3s ease; /* Smooth transition */
+    }
+
+    /* Hover effects and color changes */
+    .navbar-brand i:hover {
+      transform: scale(1.2); /* Scale the icon */
+      color: #000000; /* Default hover color */
+    }
+
+    /* Specific color changes for each icon */
+    .navbar-brand .fa-user:hover {
+      color: #28a745; /* Green color on hover for user icon */
+    }
+
+    .navbar-brand .fa-heart:hover {
+      color: #e3342f; /* Red color on hover for wishlist icon */
+    }
+
+    .navbar-brand .fa-shopping-bag:hover {
+      color: #17a2b8; /* Blue color on hover for shopping bag icon */
+    }
+
+    .form-control {
+      border-radius: 30px; /* Rounded corners for a modern, minimalist feel */
+    }
+
+    .btn-outline-success {
+      border-radius: 30px; /* Rounded button for minimalist look */
+      border-color: #333;
+      color: #333;
+    }
+
+    .btn-outline-success:hover {
+      background-color: #333;
+      color: white;
+    }
+
+     /* Optional: Customize icon size and color */
+     .navbar-brand i {
+      font-size: 24px;
+      color: #333;
+      margin-left: 10px;
+    }
+
+    .navbar-brand i:hover {
+      color: #007bff; /* Change to blue on hover */
+    }
+
+    /*carousel*/
+
+    
+<!-- CSS to make carousel images have the same width and increased height -->
+
+  .carousel-image {
+    width: 100%;
+    height: 600px; /* Increased height of the carousel images */
+    object-fit: cover; /* Ensures the image covers the entire space without distortion */
+  }
+
+  /*curve removel*/
+/* Remove border-radius from search bar, footer, nav, and other elements */
+input, button, .form-control, .navbar, .navbar-nav, .pagination, .footer, .carousel, .card {
+  border-radius: 0 !important; /* Removes border-radius */
+}
+
+/* Specifically for the navbar and other controls */
+.navbar {
+  border-radius: 0 !important; /* Remove curve from navbar */
+}
+
+.navbar-nav .nav-item {
+  border-radius: 0 !important; /* Remove curve from nav items */
+}
+
+.form-control {
+  border-radius: 0 !important; /* Remove curve from search bar */
+}
+
+.btn-outline-success {
+  border-radius: 0 !important; /* Remove curve from buttons */
+}
+
+.pagination .page-link {
+  border-radius: 0 !important; /* Remove curve from pagination */
+}
+
+/* Remove curve from footer */
+.footer {
+  border-radius: 0 !important;
+}
+
+/* Remove curve from carousel control buttons */
+.carousel-control-prev, .carousel-control-next {
+  border-radius: 0 !important;
+}
+
+/* Optional: Apply the same style to cards */
+.card {
+  border-radius: 0 !important; /* Remove curve from card */
+}
+
+/* If you want to ensure no curves in any other elements */
+* {
+  border-radius: 0 !important; /* Global reset (use cautiously) */
+}
+
+
+
+  
